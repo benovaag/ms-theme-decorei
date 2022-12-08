@@ -3,7 +3,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #fff !important;
-  font-size: 17px;
 }
 
 html,
@@ -130,6 +129,26 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+@media (min-width: 768px) {
+  .home.home--toys.home--with-transparency.home--with-flash,
+  .ui-vip-core {
+    padding-top: 109px !important;
+  }
+}
+@media (max-width: 767px) {
+  .home.home--toys.home--with-transparency.home--with-flash {
+    padding-top: 90px !important;
+  }
+  .ui-vip-core {
+    padding-top: 60px;
+  }
+}
+
+.ui-search {
+  padding-top: 65px !important;
+}
+
 .nav-cookie-disclaimer {
   background: #333;
   border-radius: 6px 6px 0 0;
@@ -196,15 +215,13 @@ table {
   color: #fff;
 }
 
-.header-wrapper {
-  width: 100%;
-  position: absolute;
-  user-select: none;
-}
-
 .header-wrapper--fixed {
   position: fixed;
-  z-index: 1000;
+  top: 0px;
+  background: #fff;
+  box-shadow: 0 3px 6px #00000029;
+  z-index: 1001;
+  width: 100%;
 }
 
 .flash-component {
@@ -236,10 +253,19 @@ table {
 
 .flash-component__text {
   display: inline;
-  font-weight: 300;
-  letter-spacing: 1px;
-  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1.2px;
   color: #fff !important;
+}
+@media (min-width: 768px) {
+  .flash-component__text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 767px) {
+  .flash-component__text {
+    font-size: 9px;
+  }
 }
 
 .header--custom-text a {
@@ -252,15 +278,6 @@ table {
 
 .flash-component__subtext {
   cursor: pointer;
-}
-
-.flash-component {
-  line-height: 1.25;
-  padding: 8px 10px;
-}
-
-.flash-component__text {
-  font-size: 12px;
 }
 
 .flash-component__link-wrapper {
@@ -339,7 +356,7 @@ table {
     transition: 0.2s linear;
     position: fixed;
     background: #fff;
-    top: 93px;
+    top: 92px;
     left: 0;
     width: 100%;
   }
@@ -540,11 +557,11 @@ table {
 
 @media (min-width: 768px) {
   .BoxBuscaPopUp.open-search {
-    width: 41%;
+    width: 43%;
   }
 
   .BoxBuscaPopUp {
-    right: 29%;
+    right: 27%;
   }
 }
 @media (max-width: 767px) {
@@ -554,7 +571,7 @@ table {
 
   .BoxBuscaPopUp {
     left: 0;
-    top: 93px;
+    top: 90px;
   }
 }
 
@@ -587,6 +604,7 @@ table {
 /* FOOTER */
 .footer {
   background: #000000;
+  margin-top: 50px;
 }
 
 .footer-columns {
@@ -788,4 +806,103 @@ table {
   width: 100%;
   max-width: 138px;
   display: block;
+}
+
+/* BANNER PRINCIPAL */
+.carousel-container .next-button,
+.carousel-container .prev-button {
+  border: 2px solid #000 !important;
+  border-radius: 50% !important;
+  height: 32px !important;
+  width: 32px !important;
+}
+
+.carousel-container .prev-button {
+  left: 1% !important;
+}
+
+.carousel-container .next-button {
+  right: 1% !important;
+}
+
+.carousel-container .next-button:before,
+.carousel-container .prev-button:before,
+.carousel-container .next-button:after,
+.carousel-container .prev-button:after {
+  background: #000 !important;
+  height: 3px !important;
+}
+
+.carousel-container .slick-dots .slick-active button {
+  background: #000 !important;
+  border: 1px solid #000 !important;
+}
+
+.carousel-container .slick-dots li button {
+  background: #fff !important;
+  border: 2px solid #000 !important;
+}
+
+/* BENEFICIOS FINAL DA PAGINA */
+.site-shopping-info .info-slide .info-slide__title,
+.site-shopping-info .info-slide h2 {
+  color: #000000 !important;
+}
+
+.site-shopping-info .info-slide p {
+  color: #484848 !important;
+}
+
+/* VITRINES */
+.section-header__title--base {
+  font-size: 20px !important;
+  line-height: 20px !important;
+  color: #1d1d1b !important;
+  font-weight: bold !important;
+}
+
+.section-header .section-header__title--base + a {
+  font-size: 12px !important;
+  line-height: 12px !important;
+  text-transform: uppercase;
+  color: #000000 !important;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+}
+
+.ui-item {
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  border: 1px solid #000 !important;
+}
+
+.ui-item__title {
+  color: #000 !important;
+  font-weight: bold !important;
+}
+
+.ui-item__installments {
+  color: #747474 !important;
+}
+
+.ui-item__discount-text {
+  background: #000;
+  color: #fff !important;
+  padding: 0 5px;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.ui-item__content {
+  border-top: 1px solid #000 !important;
+}
+
+.ui-item:hover:after {
+  box-shadow: 3px 3px 0px #000000 !important;
+  border-radius: 0 !important;
+}
+
+/* PÁGINA DE PRODUTO */
+.ui-vip-grouped-header {
+  background: #fff !important;
 }
